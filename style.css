@@ -4,19 +4,98 @@
     border: 0;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #309CBD;
+    color: whitesmoke;
+}
+
+.board {
+    margin-top: 2rem;
+}
+
+.board .cards {
+    gap: 5rem;
+}
+
 .container {
-    float: left;
-    width: 100px;
-    height: auto;
-    margin: 10px;
-    padding: 10px;
+    flex-direction: column;
+    width: 250px;
+    height: 500px;
     border: 1px solid black;
+    padding: .5rem;
+    color: 	#555555;
   }
 
   .draggable {
     cursor: move;
+    text-align: center;
+    min-height: 3rem;
+    background-color: #77BCDE;
+    margin-bottom: 0.5rem;
   }
 
   .draggable.dragging {
     opacity: .5;
   }
+
+
+
+  .cardTitle {
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  #todo {
+    background-color: #BEDCFE;
+  }
+
+  #inProgress {
+    background-color: #A2CDD2;
+  }
+
+  #test {
+    background-color: #97C7C2;
+  }
+
+  #done {
+    background-color: #A9D1DD;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+    cursor: pointer;
+    background: none;
+    color: whitesmoke;
+}
+
+.btn-createCard:hover {
+    opacity: 0.5;
+}
