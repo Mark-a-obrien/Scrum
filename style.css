@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+.container {
+    float: left;
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  .draggable {
+    cursor: move;
+  }
+
+  .draggable.dragging {
+    opacity: .5;
+  }
