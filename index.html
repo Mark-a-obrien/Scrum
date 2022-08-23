@@ -12,27 +12,27 @@
 
     <header>
         <h1>Scrum board</h1>
-        <button class="btn btn-createCard ">new story</button>
     </header>
 
     <section class="board">
-        <section class="cards center">
+        
+        <section class="stories center">
+            <section class="container" id="backlog">
+                <div class="storyTitle" id="backlog"><h1>BACKLOG</h1></div>
+                <button class="btn btn-createStory">+</button>
+            </section>
             <div class="container">
-                <div class="cardTitle" id="todo"><h1>TO DO</h1></div>
-                <div class="draggable" draggable="true">1</div>
-                <p class="draggable" draggable="true">2</p>
+                <div class="storyTitle" id="todo"><h1>TO DO</h1></div>
             </div>
             <div class="container">
-                <div class="cardTitle" id="inProgress"><h1>IN PROGRESS</h1></div>
-                <p class="draggable" draggable="true">3</p>
-                <p class="draggable" draggable="true">4</p>
+                <div class="storyTitle" id="inProgress"><h1>IN PROGRESS</h1></div>
             </div>
 
-            <div class="container">
-                <div class="cardTitle" id="test"><h1>TEST</h1></div>
+            <div class="container" data-id="parent">
+                <div class="storyTitle" id="test"><h1>TEST</h1></div>
             </div>
             <div class="container">
-                <div class="cardTitle" id="done"><h1>DONE</h1></div>
+                <div class="storyTitle" id="done"><h1>DONE</h1></div>
             </div>
         </section>
     </section>

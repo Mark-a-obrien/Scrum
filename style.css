@@ -4,10 +4,13 @@
     border: 0;
 }
 
+h1 {
+    font-size: 1.2rem;
+}
+
 .center {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 header {
@@ -23,14 +26,13 @@ header {
     margin-top: 2rem;
 }
 
-.board .cards {
-    gap: 5rem;
+.board .stories {
+    gap: 3rem;
 }
-
 .container {
     flex-direction: column;
     width: 250px;
-    height: 500px;
+    min-height: 500px;
     border: 1px solid black;
     padding: .5rem;
     color: 	#555555;
@@ -40,8 +42,9 @@ header {
     cursor: move;
     text-align: center;
     min-height: 3rem;
-    background-color: #77BCDE;
+    /* background-color: #77BCDE; */
     margin-bottom: 0.5rem;
+    
   }
 
   .draggable.dragging {
@@ -50,7 +53,7 @@ header {
 
 
 
-  .cardTitle {
+  .storyTitle {
     padding: 1rem;
     text-align: center;
     margin-bottom: 1rem;
@@ -85,6 +88,56 @@ header {
 
 
 
+/* form */
+form {
+    margin-bottom: 0.05;
+    background-color: white;
+}
+
+.textAndIcon {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #77BCDE; */
+    justify-content: start;
+    align-items: center;
+}
+
+
+
+.icon {
+    margin: 4px;
+    cursor: pointer;
+    width: 1rem;
+}
+
+
+textarea {
+    background-color: #77BCDE;
+    resize: none;
+    min-height: 3rem;
+    text-align: center;
+    width: 100%;
+    color: #555555;
+    font-size: 1rem;
+}
+
+.text-edit {
+    outline: 1px solid black;
+}
+
+.colors {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.color {
+    border: 1px solid black;
+}
+
 
 
 
@@ -92,10 +145,16 @@ header {
 
 .btn {
     cursor: pointer;
-    background: none;
-    color: whitesmoke;
+    padding: 1rem;
 }
 
-.btn-createCard:hover {
+.btn-createStory {
+    color: #555555;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-createStory:hover {
     opacity: 0.5;
 }
