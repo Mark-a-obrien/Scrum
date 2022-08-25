@@ -33,6 +33,7 @@ function getDragAFterElement(container, y) {
 
 
 
+
 // form
 const colors = document.querySelectorAll(".color");
 const textArea = document.querySelector(".text");
@@ -147,12 +148,19 @@ function createStory() {
     editDiv.append(colors, btnDelete);
     form.append(textarea, iconArea, editDiv);  
     backLog.append(form);
+
+    return form;
 }
 
 create.addEventListener("click", () => {
-    createStory();
+    //document.cookie = `allStories = ${createStory()}; expires=Thu, 18 Dec 2022 12:00:00 UTC"`
+    const form = createStory();
+    
 })
 
+window.onunload = () => {
+    console.log("Goodbye.")
+}
 
 
 
